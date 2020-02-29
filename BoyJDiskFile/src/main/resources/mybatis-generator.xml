@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <!-- 是否生成注释代时间戳-->
+            <property name="suppressDate" value="true"/>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="false"/>
+        </commentGenerator>
+        <!--数据库链接地址账号密码-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/board_diskFile" userId="root" password="whoisboy">
+        </jdbcConnection>
+        <javaTypeResolver>
+            <!--该属性可以控制是否强制DECIMAL和NUMERIC类型的字段转换为Java类型的java.math.BigDecimal,默认值为false，一般不需要配置。-->
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!--生成Model类存放位置-->
+        <javaModelGenerator targetPackage="cn.Boy.DiskFile.pojo" targetProject="src/main/java">
+            <!--enableSubPackages:如果true，MBG会根据catalog和schema来生成子包。如果false就会直接用targetPackage属性。默认为false。-->
+            <property name="enableSubPackages" value="true"/>
+            <!--trimStrings:是否对数据库查询结果进行trim操作，如果设置为true就会生成类似这样public void setUsername(String username) {this.username = username == null ? null : username.trim();}的setter方法。默认值为false。-->
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!--生成映射xml文件存放位置-->
+       <!-- <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>-->
+        <!--生成Dao类存放位置(*Mapper.java)-->
+        <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码
+                type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象
+                type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
+                type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
+        -->
+      <!--  <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.demo.dao" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>-->
+        <!--生成对应表及类名-->
+        <table tableName="customerDbList" domainObjectName="CustomerDbList" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="id" value="true" />
+            <property name="guid" value="true" />
+            <property name="dataSourceClassName" value="true" />
+            <property name="dataSourceUser" value="true" />
+            <property name="dataSourcePassword" value="true" />
+            <property name="dataSourceDataBaseName" value="true" />
+            <property name="dataSourcePortNumber" value="true" />
+            <property name="dataSourceServerName" value="true" />
+            <property name="remark" value="true" />
+            <property name="dbTypeNum" value="true" />
+            <property name="isActive" value="true" />
+            <property name="createTime" value="true"/>
+            <property name="updateTime" value="true"/>
+
+            <!-- 数据库表主键 -->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+        </table>
+
+
+        <table tableName="DBUpgradeHistory" domainObjectName="DBUpgradeHistory" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="nodeDbUpgradeHIstoryId" value="true"/>
+            <property name="nodeDbGuid" value="true"/>
+            <property name="nodeDbName" value="true"/>
+            <property name="fromPlatformDbVersion" value="true"/>
+            <property name="toPlatformDbVersion" value="true"/>
+            <property name="upgradeTime" value="true"/>
+            <property name="currentPlatformUser" value="true"/>
+            <property name="platformUserLoginName" value="true"/>
+            <property name="platformUserName" value="true"/>
+            <property name="platformHostGuid" value="true"/>
+            <property name="comments" value="true"/>
+            <property name="nodeDbUpgradeHIstoryGuid" value="true"/>
+            <property name="isActive" value="true"/>
+
+            <!-- 数据库表主键 -->
+            <generatedKey column="nodeDbUpgradeHIstoryId" sqlStatement="Mysql" identity="true" />
+        </table>
+
+        <table tableName="unitNodeRelation" domainObjectName="UnitNodeRelation" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="appId" value="true"/>
+            <property name="isActive" value="true"/>
+            <property name="createTime" value="true"/>
+            <property name="updateTime" value="true"/>
+            <property name="unitNodeRelationId" value="true"/>
+            <property name="unitNodeRelationGuid" value="true"/>
+            <!-- 数据库表主键 -->
+            <generatedKey column="unitNodeRelationId" sqlStatement="Mysql" identity="true" />
+        </table>
+
+        <table tableName="platformFileExt" domainObjectName="PlatformFileExt" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="fileExtID" value="true"/>
+            <property name="fileExtGuid" value="true"/>
+            <property name="fileExtName" value="true"/>
+            <property name="createTime" value="true"/>
+            <property name="updateTime" value="true"/>
+            <property name="isActive" value="true"/>
+            <!-- 数据库表主键 -->
+            <generatedKey column="fileExtID" sqlStatement="Mysql" identity="true" />
+        </table>
+
+        <table tableName="platformDocType" domainObjectName="PlatformDocType" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="docTypeId" value="true"/>
+            <property name="docTypeGuid" value="true"/>
+            <property name="docTypeName" value="true"/>
+            <property name="docTypeDesc" value="true"/>
+            <property name="maxFileSize" value="true"/>
+            <property name="fileShareFolder" value="true"/>
+            <property name="comment" value="true"/>
+            <property name="isActive" value="true"/>
+            <property name="createTime" value="true"/>
+            <property name="updateTime" value="true"/>
+            <!-- 数据库表主键 -->
+            <generatedKey column="docTypeId" sqlStatement="Mysql" identity="true" />
+        </table>
+
+        <table tableName="platformDocTypeFileExtRelation" domainObjectName="PlatformDocTypeFileExtRelation" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="docTypeFileExtRelationID" value="true"/>
+            <property name="docTypeFileExtRelationGuid" value="true"/>
+            <property name="docTypeId" value="true"/>
+            <property name="platformFileExtID" value="true"/>
+            <property name="isActive" value="true"/>
+            <property name="createTime" value="true"/>
+            <property name="updateTime" value="true"/>
+
+            <!-- 数据库表主键 -->
+            <generatedKey column="docTypeFileExtRelationID" sqlStatement="Mysql" identity="true" />
+        </table>
+
+
+        <table tableName="documentList" domainObjectName="DocumentList" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="docId" value="true"/>
+            <property name="platformfileExtID" value="true"/>
+            <property name="docTypeId" value="true"/>
+            <property name="docGuid" value="true"/>
+            <property name="fileExtId" value="true"/>
+            <property name="fileName" value="true"/>
+            <property name="filePath" value="true"/>
+            <property name="fileSize" value="true"/>
+            <property name="version" value="true"/>
+            <property name="isActive" value="true"/>
+            <property name="createTime" value="true"/>
+            <property name="updateTime" value="true"/>
+            <property name="memorySeaLevelTime" value="true"/>
+            <property name="memoryLiveTimeSec" value="true"/>
+            <property name="memoryHitTimes" value="true"/>
+            <property name="memoryPerHitComeUpSeconds" value="true"/>
+            <property name="storageClusterType" value="true"/>
+            <property name="uploadedByPlatformUserGuid" value="true"/>
+            <property name="lastModifiedByPlatformUserGuid" value="true"/>
+            <property name="deletedByPlatformUserGuid" value="true"/>
+            <property name="clusterStorageStatus" value="true"/>
+            <property name="fileExtName" value="true"/>
+            <property name="viewerCacheFileName" value="true"/>
+            <property name="viewerCacheTimeLength" value="true"/>
+            <property name="viewerCacheTime" value="true"/>
+            <!-- 数据库表主键 -->
+            <generatedKey column="docId" sqlStatement="Mysql" identity="true" />
+        </table>
+
+        <table tableName="AppPlatformDocTypeRelation" domainObjectName="AppPlatformDocTypeRelation" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="appdocTypeRelationID" value="true"/>
+            <property name="appdocTypeRelationGuid" value="true"/>
+            <property name="appId" value="true"/>
+            <property name="docTypeId" value="true"/>
+            <property name="downloadFlag" value="true"/>
+            <property name="uploadFlag" value="true"/>
+            <property name="deleteFlag" value="true"/>
+            <property name="createTime" value="true"/>
+            <property name="updateTime" value="true"/>
+
+            <!-- 数据库表主键 -->
+            <generatedKey column="appdocTypeRelationID" sqlStatement="Mysql" identity="true" />
+        </table>
+
+        <table tableName="RequestLog" domainObjectName="RequestLog" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="reqId" value="true"/>
+            <property name="appId" value="true"/>
+            <property name="appName" value="true"/>
+            <property name="appGuid" value="true"/>
+            <property name="userId" value="true"/>
+            <property name="url" value="true"/>
+            <property name="createTime" value="true"/>
+            <property name="reqStorageClusterType" value="true"/>
+            <property name="reqGuid" value="true"/>
+            <property name="isActive" value="true"/>
+            <property name="userGuid" value="true"/>
+
+            <!-- 数据库表主键 -->
+            <generatedKey column="reqId" sqlStatement="Mysql" identity="true" />
+        </table>
+
+        <table tableName="operationLog" domainObjectName="OperationLog" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" >
+            <!--useActualColumnNames:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。 在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性。-->
+            <property name="useActualColumnNames" value="true" />
+            <property name="operationLogId" value="true"/>
+            <property name="userId" value="true"/>
+            <property name="userName" value="true"/>
+            <property name="operationType" value="true"/>
+            <property name="operationLogTime" value="true"/>
+            <property name="appId" value="true"/>
+            <property name="docId" value="true"/>
+            <property name="exfModuleId" value="true"/>
+            <property name="viewId" value="true"/>
+            <property name="platformControllerId" value="true"/>
+            <property name="platformActionId" value="true"/>
+            <property name="usingObjectId" value="true"/>
+            <property name="bizUserRoleId" value="true"/>
+            <property name="deviceId" value="true"/>
+            <property name="devLangId" value="true"/>
+            <property name="workFlowStatusId" value="true"/>
+            <property name="isDocExistingCurrently" value="true"/>
+            <property name="operationStorageClusterType" value="true"/>
+            <property name="operationLogGuid" value="true"/>
+            <property name="isActive" value="true"/>
+            <property name="userGuid" value="true"/>
+            <property name="appGuid" value="true"/>
+            <!-- 数据库表主键 -->
+            <generatedKey column="operationLogId" sqlStatement="Mysql" identity="true" />
+        </table>
+
+    </context>
+</generatorConfiguration>

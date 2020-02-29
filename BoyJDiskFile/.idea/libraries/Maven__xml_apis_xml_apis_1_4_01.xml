@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: xml-apis:xml-apis:1.4.01">
+    <CLASSES>
+      <root url="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

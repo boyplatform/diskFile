@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.Boy.DiskFile.KeyValueGroup",
+      "name": "tutorial",
+      "type": "cn.Boy.DiskFile.KeyValueGroup"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.Boy.DiskFile.KeyValueGroup",
+      "name": "tutorial.maps",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.Integer,java.lang.String>>"
+    }
+  ]
+}
