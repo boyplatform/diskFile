@@ -136,6 +136,7 @@ Content-Type: text/xml
 ---------------------------acebdf13572468--
 
 --读取分布式存储文件 (read distributed file)
+
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/cat
 User-Agent: Fiddler
 Host: www.boydiskfile.com
@@ -156,6 +157,7 @@ userGuid=static&docTypeId=21&platformfileExtID=22&fileName=test4.xml&catType=red
 
 
 --读目录文件列表 (seek files list by path for platform's user)
+
 post url:  http://www.boydiskfile.com/DiskFile/CephEntry/ls
 User-Agent: Fiddler
 Host: www.boydiskfile.com
@@ -167,6 +169,7 @@ userGuid=static
 
 
 --重命名目录或文件 (rename ceph dir or file)
+
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/rename
 User-Agent: Fiddler
 Host: www.boydiskfile.com
@@ -178,6 +181,7 @@ userGuid=static&oldFileName=test4.xml&newFileName=testNew.xml&platformfileExtID=
 
 
 --删除文件 (delete ceph file) 
+
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/rm
 User-Agent: Fiddler
 Host: www.boydiskfile.com
@@ -188,4 +192,5 @@ body message:
 userGuid=static&fileName=testNew.xml&platformfileExtID=22&docTypeId=21
 
 --跳转到当前活动的ceph cluster dashboard(Jump to current actived ceph cluster dashboard) [start up ceph-rest-api server on application.yml's apiUrl's host]
+
 request url: http://www.boydiskfile.com/DiskFile/CephEntry/seekCephDashBoard
