@@ -71,6 +71,7 @@ body message:
 }
 
 --获取平台文件类型列表(seek platform's document type list)
+
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/seekDocType
 
 User-Agent: Fiddler
@@ -83,6 +84,7 @@ body message:
 
 
 --创建平台平台支持的文件扩展名(create the file extension name which should be supported by the platform)
+
 post url:  http://www.boydiskfile.com/DiskFile/CephEntry/addFileExt  
   
 User-Agent: Fiddler
@@ -96,6 +98,7 @@ body message:
 }
 
 --获取平台支持的文件扩展名列表(get the file extension name which has been supported by the platform)
+
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/seekFileExt
 
 User-Agent: Fiddler
@@ -107,6 +110,7 @@ body message:
 {}
 
 --创建平台文件类型-文件扩展名映射关系(create the platform document type and supported file extension name mapping relationship)
+
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/addDocTypeFileExtRelation
 
 User-Agent: Fiddler
@@ -118,6 +122,7 @@ body message:
 docTypeId=21&fileExtID=22
 
 --获取平台文件类型-文件扩展名关系列表(get the platform document type and supported file extension name mapping relationship list)
+
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/seekDocTypeFileExtRelation
 
 User-Agent: Fiddler
@@ -129,6 +134,7 @@ body message:
 {}
 
 --写入分布式存储文件 (write distributed file)  
+
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/vim?isBig=0&docTypeId=21&platformfileExtID=22&userGuid=static
  
 Content-Type: multipart/form-data; boundary=-------------------------acebdf13572468
