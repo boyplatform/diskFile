@@ -102,6 +102,7 @@ User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 135
 content-type: application/json
+
 body message:
 {}
 
@@ -135,6 +136,7 @@ User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 223
 
+body message:
 ---------------------------acebdf13572468
 Content-Disposition: form-data; name="inputBufferFiles"; filename="test4.xml"
 Content-Type: text/xml
