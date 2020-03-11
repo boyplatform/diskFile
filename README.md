@@ -34,6 +34,7 @@ DiskFile,One repo of boy distribute modality platform. Support Ceph and will sup
 --ceph集群挂载(ceph mount)
 
 post url:  http://www.boydiskfile.com/DiskFile/CephEntry/mount
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 135
@@ -51,6 +52,7 @@ body message:
 --创建平台文件类型(create platform's document type)
 
 post url:  http://www.boydiskfile.com/DiskFile/CephEntry/addDocType
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 135
@@ -70,6 +72,7 @@ body message:
 
 --获取平台文件类型列表(seek platform's document type list)
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/seekDocType
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 135
@@ -80,7 +83,8 @@ body message:
 
 
 --创建平台平台支持的文件扩展名(create the file extension name which should be supported by the platform)
-post url:  http://www.boydiskfile.com/DiskFile/CephEntry/addFileExt    
+post url:  http://www.boydiskfile.com/DiskFile/CephEntry/addFileExt  
+  
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 135
@@ -93,6 +97,7 @@ body message:
 
 --获取平台支持的文件扩展名列表(get the file extension name which has been supported by the platform)
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/seekFileExt
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 135
@@ -102,6 +107,7 @@ body message:
 
 --创建平台文件类型-文件扩展名映射关系(create the platform document type and supported file extension name mapping relationship)
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/addDocTypeFileExtRelation
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 579
@@ -112,6 +118,7 @@ docTypeId=21&fileExtID=22
 
 --获取平台文件类型-文件扩展名关系列表(get the platform document type and supported file extension name mapping relationship list)
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/seekDocTypeFileExtRelation
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 135
@@ -138,6 +145,7 @@ Content-Type: text/xml
 --读取分布式存储文件 (read distributed file)
 
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/cat
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 579
@@ -159,6 +167,7 @@ userGuid=static&docTypeId=21&platformfileExtID=22&fileName=test4.xml&catType=red
 --读目录文件列表 (seek files list by path for platform's user)
 
 post url:  http://www.boydiskfile.com/DiskFile/CephEntry/ls
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 579
@@ -171,6 +180,7 @@ userGuid=static
 --重命名目录或文件 (rename ceph dir or file)
 
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/rename
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 579
@@ -183,6 +193,7 @@ userGuid=static&oldFileName=test4.xml&newFileName=testNew.xml&platformfileExtID=
 --删除文件 (delete ceph file) 
 
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/rm
+
 User-Agent: Fiddler
 Host: www.boydiskfile.com
 Content-Length: 579
