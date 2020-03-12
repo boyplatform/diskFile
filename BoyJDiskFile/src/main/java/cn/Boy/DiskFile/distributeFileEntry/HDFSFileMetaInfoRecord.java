@@ -116,6 +116,11 @@ public class HDFSFileMetaInfoRecord implements ICommonFileMetaInfoRecorder {
         return  null;
     }
 
+    public List<PlatformDocTypeFileExtRelation> getPlatformDocTypeFileExtRelationListByFileExtName(String fileExtName){
+
+        return  null;
+    }
+
     //For AppPlatformDocTypeRelation
     public AppPlatformDocTypeRelation addAppPlatformDocTypeRelation(AppPlatformDocTypeRelation appPlatformDocTypeRelation){
 

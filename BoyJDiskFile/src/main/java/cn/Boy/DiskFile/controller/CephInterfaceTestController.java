@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import cn.Boy.DiskFile.ThreadLocalContext;
 import cn.Boy.DiskFile.common.CommonEnums;
 import cn.Boy.DiskFile.common.CommonHelper;
+import cn.Boy.DiskFile.common.DiskFileHttpHelper;
 import cn.Boy.DiskFile.distributeFileEntry.*;
 import cn.Boy.DiskFile.dto.CephFsConfigInfo;
 
@@ -24,6 +25,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -48,6 +50,7 @@ public class CephInterfaceTestController {
     @Value("${DiskFile.viewerCacheFileFolder:target/uploadFileCache/viewerCache}") String viewerCacheFileFolder;
     @Value("${platformArch.ViewerFileCache.defaultViewerCacheLength}")  String  defaultViewerCacheLength;
     @Value("${platformArch.ViewerFileCache.ViewerFileCachePullRate}")  long  viewerFileCachePullRate;
+    @Value("${platformArch.DiskFileClusterIps}")  String  diskFileClusterIps;
 
     @Autowired
     @Qualifier("CephFileOperator")
@@ -676,7 +679,26 @@ public class CephInterfaceTestController {
 
             if(cephFileMetaInfoRecord.addPlatformDocType(platformDocType)!=null){
 
-
+               //boardcast the platformDocType to diskFile cluster
+               HttpServletRequest request= ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+               String[] diskFileIps=diskFileClusterIps.split(";");
+               for(String diskFileIp: diskFileIps){
+                   if(diskFileIp!=commonHelper.getRequestIP(request)) {
+                       String postUrl = request.getScheme() + "://" + diskFileIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addDocType";
+                       Map<String,Object> parameterMap=new Hashtable<String,Object>();
+                       parameterMap.put("docTypeName",platformDocType.getDocTypeName());
+                       parameterMap.put("docTypeDesc",platformDocType.getDocTypeDesc());
+                       parameterMap.put("maxFileSize",platformDocType.getMaxFileSize());
+                       parameterMap.put("fileShareFolder",platformDocType.getFileShareFolder());
+                       parameterMap.put("comment",platformDocType.getComment());
+                       parameterMap.put("isActive",platformDocType.getIsActive());
+                       try {
+                           DiskFileHttpHelper.getInstance().postRequest(postUrl,parameterMap,DiskFileHttpHelper.postQuestMode.json.toString());
+                       } catch (JSONException e) {
+                           e.printStackTrace();
+                       }
+                   }
+               }
                 result.put("result",true);
                 result.put("platformDocType",cephFileMetaInfoRecord.getOnePlatformDocTypeByGuid(platformDocType.getDocTypeGuid()));
                 result.put("desc","One platform doctype has been added into current node successfully.");
@@ -718,6 +740,23 @@ public class CephInterfaceTestController {
         }
 
         if(cephFileMetaInfoRecord.addPlatformFileExt(platformFileExt)!=null){
+
+            //boardcast the platformFileExt to diskFile cluster
+            HttpServletRequest request= ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+            String[] diskFileIps=diskFileClusterIps.split(";");
+            for(String diskFileIp: diskFileIps){
+                if(diskFileIp!=commonHelper.getRequestIP(request)) {
+                    String postUrl = request.getScheme() + "://" + diskFileIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addFileExt";
+                    Map<String,Object> parameterMap=new Hashtable<String,Object>();
+                    parameterMap.put("fileExtName",platformFileExt.getFileExtName());
+
+                    try {
+                        DiskFileHttpHelper.getInstance().postRequest(postUrl,parameterMap,DiskFileHttpHelper.postQuestMode.json.toString());
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
             result.put("result",true);
             result.put("platformFileExt",cephFileMetaInfoRecord.getOnePlatformFileExtByGuid(platformFileExt.getFileExtGuid()));
             result.put("desc","Platform fileExt name has been added into platform successfully.");
@@ -752,6 +791,23 @@ public class CephInterfaceTestController {
 
         if(cephFileMetaInfoRecord.addPlatformDocTypeFileExtRelation(platformDocTypeFileExtRelation)!=null){
 
+            //boardcast the platformDocTypeFileExtRelation to diskFile cluster
+            HttpServletRequest request= ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+            String[] diskFileIps=diskFileClusterIps.split(";");
+            for(String diskFileIp: diskFileIps){
+                if(diskFileIp!=commonHelper.getRequestIP(request)) {
+                    String postUrl = request.getScheme() + "://" + diskFileIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addDocTypeFileExtRelation";
+                    Map<String,Object> parameterMap=new Hashtable<String,Object>();
+                    parameterMap.put("docTypeId",platformDocTypeFileExtRelation.getDocTypeId());
+                    parameterMap.put("fileExtID",platformDocTypeFileExtRelation.getPlatformFileExtID());
+
+                    try {
+                        DiskFileHttpHelper.getInstance().postRequest(postUrl,parameterMap,DiskFileHttpHelper.postQuestMode.textBody.toString());
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
             result.put("result",true);
             result.put("platformDocTypeFileExtRelation",cephFileMetaInfoRecord.getOnePlatformDocTypeFileExtRelationByGuid(platformDocTypeFileExtRelation.getDocTypeFileExtRelationGuid()));
             result.put("desc","The input docType & File Extension relationship has been created successfully.");
@@ -799,6 +855,17 @@ public class CephInterfaceTestController {
         return  pfDcExt;
     }
 
+    //按文件扩展名获取平台文件类型-文件扩展名关系列表
+    @RequestMapping(value = "/seekDocTypeFileExtRelationByFileExtName",method =RequestMethod.POST)
+    @ResponseBody
+    public List<PlatformDocTypeFileExtRelation> getDocTypeFileExtRelationListByFileExtName(@RequestParam (value = "fileExtName") String fileExtName){
+
+        List<PlatformDocTypeFileExtRelation> pfDcExt=new ArrayList<PlatformDocTypeFileExtRelation>();
+        ThreadLocalContext.setDbKey("main");
+        pfDcExt=cephFileMetaInfoRecord.getPlatformDocTypeFileExtRelationListByFileExtName(fileExtName);
+        ThreadLocalContext.setDbKey(null);
+        return  pfDcExt;
+    }
 
       /*
         Below is the CephClusterTalk API |:)<|

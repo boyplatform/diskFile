@@ -13,6 +13,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PlatformDocTypeFileExtRelationDao {
 
+    @Select("select a.* from platformDocTypeFileExtRelation a left join  platformFileExt b on a.platformFileExtID=b.fileExtID where b.fileExtName=#{fileExtName} and a.isActive=1")
+    public List<PlatformDocTypeFileExtRelation> getListByFileExtName(String fileExtName);
+
     @Select("select * from platformDocTypeFileExtRelation where docTypeFileExtRelationID=#{docTypeFileExtRelationID}")
     public PlatformDocTypeFileExtRelation getOneById(long docTypeFileExtRelationID);
 

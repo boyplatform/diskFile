@@ -133,6 +133,19 @@ content-type: application/json
 body message:
 {}
 
+--按文件扩展名获取平台文件类型-文件扩展名关系列表(get the platform document type and supported file extension name mapping relationship list by file extension name)
+
+post url: http://www.boydiskfile.com/DiskFile/CephEntry/seekDocTypeFileExtRelationByFileExtName
+
+User-Agent: Fiddler
+Host: 192.168.125.129:8080
+Content-Length: 135
+content-type: application/x-www-form-urlencoded;charset=utf-8
+
+body message:
+fileExtName=doc
+
+
 --写入分布式存储文件 (write distributed file)  
 
 post url: http://www.boydiskfile.com/DiskFile/CephEntry/vim?isBig=0&docTypeId=21&platformfileExtID=22&userGuid=static

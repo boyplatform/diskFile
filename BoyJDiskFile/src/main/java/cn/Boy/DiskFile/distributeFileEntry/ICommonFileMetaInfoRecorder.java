@@ -40,6 +40,7 @@ public interface ICommonFileMetaInfoRecorder{
     public PlatformDocTypeFileExtRelation getOnePlatformDocTypeFileExtRelationById(int docTypeFileExtRelationID);
     public PlatformDocTypeFileExtRelation getOnePlatformDocTypeFileExtRelationByGuid(String docTypeFileExtRelationGuid);
     public PlatformDocTypeFileExtRelation getOnePlatformDocTypeFileExtRelationByForeignKeyGroup(long docTypeId,long platformFileExtID);
+    public List<PlatformDocTypeFileExtRelation> getPlatformDocTypeFileExtRelationListByFileExtName(String fileExtName);
 
     //For AppPlatformDocTypeRelation
     public AppPlatformDocTypeRelation addAppPlatformDocTypeRelation(AppPlatformDocTypeRelation appPlatformDocTypeRelation);

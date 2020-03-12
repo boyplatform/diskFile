@@ -362,6 +362,24 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
     }
 
     @Transactional(readOnly=true)
+    public List<PlatformDocTypeFileExtRelation> getPlatformDocTypeFileExtRelationListByFileExtName(String fileExtName){
+        try {
+            Thread.sleep(10);
+            if(log.isTraceEnabled()) {
+                log.trace("getPlatformDocTypeFileExtRelationListByFileExtName started  ");
+            }
+            List<PlatformDocTypeFileExtRelation> list = platformDocTypeFileExtRelationDao.getListByFileExtName(fileExtName);
+
+            return list;
+        }catch(Exception e) {
+
+            if(log.isTraceEnabled()) {
+                log.trace("getPlatformDocTypeFileExtRelationListByFileExtName failed  ");
+            }
+            return null;
+        }
+    }
+    @Transactional(readOnly=true)
     public List<PlatformDocTypeFileExtRelation> getAllPlatformDocTypeFileExtRelation(){
         try {
             Thread.sleep(10);
