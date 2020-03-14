@@ -50,7 +50,7 @@ public class CephInterfaceTestController {
     @Value("${DiskFile.viewerCacheFileFolder:target/uploadFileCache/viewerCache}") String viewerCacheFileFolder;
     @Value("${platformArch.ViewerFileCache.defaultViewerCacheLength}")  String  defaultViewerCacheLength;
     @Value("${platformArch.ViewerFileCache.ViewerFileCachePullRate}")  long  viewerFileCachePullRate;
-    @Value("${platformArch.DiskFileClusterIps}")  String  diskFileClusterIps;
+    @Value("${platformArch.CrystalClusterIps}")  String  crystalClusterIps;
 
     @Autowired
     @Qualifier("CephFileOperator")
@@ -681,7 +681,7 @@ public class CephInterfaceTestController {
 
                //boardcast the platformDocType to diskFile cluster
                HttpServletRequest request= ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-               String[] diskFileIps=diskFileClusterIps.split(";");
+               String[] diskFileIps=crystalClusterIps.split(";");
                for(String diskFileIp: diskFileIps){
                    if(diskFileIp!=commonHelper.getRequestIP(request)) {
                        String postUrl = request.getScheme() + "://" + diskFileIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addDocType";
@@ -743,7 +743,7 @@ public class CephInterfaceTestController {
 
             //boardcast the platformFileExt to diskFile cluster
             HttpServletRequest request= ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-            String[] diskFileIps=diskFileClusterIps.split(";");
+            String[] diskFileIps=crystalClusterIps.split(";");
             for(String diskFileIp: diskFileIps){
                 if(diskFileIp!=commonHelper.getRequestIP(request)) {
                     String postUrl = request.getScheme() + "://" + diskFileIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addFileExt";
@@ -793,7 +793,7 @@ public class CephInterfaceTestController {
 
             //boardcast the platformDocTypeFileExtRelation to diskFile cluster
             HttpServletRequest request= ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-            String[] diskFileIps=diskFileClusterIps.split(";");
+            String[] diskFileIps=crystalClusterIps.split(";");
             for(String diskFileIp: diskFileIps){
                 if(diskFileIp!=commonHelper.getRequestIP(request)) {
                     String postUrl = request.getScheme() + "://" + diskFileIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addDocTypeFileExtRelation";
