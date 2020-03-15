@@ -46,4 +46,7 @@ public interface PlatformFileExtDao {
     @Update("update platformFileExt set isActive=1 where fileExtID=#{fileExtID}")
     public int setToActive(long fileExtID);
 
+    @Update("update platformFileExt set isBoardCast=1,boardCastCount=#{boardCastCount} where fileExtID=#{fileExtID}")
+    public int setToBoardCasted(long fileExtID,long boardCastCount);
+
 }

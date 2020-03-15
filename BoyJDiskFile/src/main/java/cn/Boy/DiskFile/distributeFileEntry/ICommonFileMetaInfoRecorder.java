@@ -14,8 +14,9 @@ public interface ICommonFileMetaInfoRecorder{
     //For platformFileExt
     public PlatformFileExt addPlatformFileExt(PlatformFileExt platformFileExt);
     public PlatformFileExt updatePlatformFileExt(PlatformFileExt platformFileExt);
-    public boolean deletePlatformFileExt(int fileExtID);
-    public boolean recoverPlatformFileExt(int fileExtID);
+    public boolean deletePlatformFileExt(long fileExtID);
+    public boolean recoverPlatformFileExt(long fileExtID);
+    public boolean setPlatformFileExtBoardCastedFlag(long fileExtID,long boardCastCount);
     public List<PlatformFileExt> getAllPlatformFileExt();
     public PlatformFileExt getOnePlatformFileExtById(int fileExtID);
     public PlatformFileExt getOnePlatformFileExtByGuid(String fileExtGuid);
@@ -24,8 +25,9 @@ public interface ICommonFileMetaInfoRecorder{
     //For platformDocType
     public PlatformDocType addPlatformDocType(PlatformDocType platformDocType);
     public PlatformDocType updatePlatformDocType(PlatformDocType platformDocType);
-    public boolean deletePlatformDocType(int docTypeId);
-    public boolean recoverPlatformDocType(int docTypeId);
+    public boolean deletePlatformDocType(long docTypeId);
+    public boolean recoverPlatformDocType(long docTypeId);
+    public boolean setPlatformDocTypeBoardCastedFlag(long docTypeId,long boardCastCount);
     public List<PlatformDocType> getAllPlatformDocType();
     public PlatformDocType getOnePlatformDocTypeById(int docTypeId);
     public PlatformDocType getOnePlatformDocTypeByGuid(String docTypeGuid);
@@ -34,8 +36,9 @@ public interface ICommonFileMetaInfoRecorder{
     //For platformDocTypeFileExtRelation
     public PlatformDocTypeFileExtRelation addPlatformDocTypeFileExtRelation(PlatformDocTypeFileExtRelation platformDocTypeFileExtRelation);
     public PlatformDocTypeFileExtRelation updatePlatformDocTypeFileExtRelation(PlatformDocTypeFileExtRelation platformDocTypeFileExtRelation);
-    public boolean deletePlatformDocTypeFileExtRelation(int docTypeFileExtRelationID);
-    public boolean recoverPlatformDocTypeFileExtRelation(int docTypeFileExtRelationID);
+    public boolean deletePlatformDocTypeFileExtRelation(long docTypeFileExtRelationID);
+    public boolean recoverPlatformDocTypeFileExtRelation(long docTypeFileExtRelationID);
+    public boolean setPlatformDocTypeFileExtRelationBoardCastedFlag(long docTypeFileExtRelationID,long boardCastCount);
     public List<PlatformDocTypeFileExtRelation> getAllPlatformDocTypeFileExtRelation();
     public PlatformDocTypeFileExtRelation getOnePlatformDocTypeFileExtRelationById(int docTypeFileExtRelationID);
     public PlatformDocTypeFileExtRelation getOnePlatformDocTypeFileExtRelationByGuid(String docTypeFileExtRelationGuid);
@@ -45,8 +48,8 @@ public interface ICommonFileMetaInfoRecorder{
     //For AppPlatformDocTypeRelation
     public AppPlatformDocTypeRelation addAppPlatformDocTypeRelation(AppPlatformDocTypeRelation appPlatformDocTypeRelation);
     public AppPlatformDocTypeRelation updateAppPlatformDocTypeRelation(AppPlatformDocTypeRelation appPlatformDocTypeRelation);
-    public boolean deleteAppPlatformDocTypeRelation(int appdocTypeRelationID);
-    public boolean recoverAppPlatformDocTypeRelation(int appdocTypeRelationID);
+    public boolean deleteAppPlatformDocTypeRelation(long appdocTypeRelationID);
+    public boolean recoverAppPlatformDocTypeRelation(long appdocTypeRelationID);
     public List<AppPlatformDocTypeRelation> getAllAppPlatformDocTypeRelation();
     public AppPlatformDocTypeRelation getOneAppPlatformDocTypeRelationById(int appdocTypeRelationID);
 

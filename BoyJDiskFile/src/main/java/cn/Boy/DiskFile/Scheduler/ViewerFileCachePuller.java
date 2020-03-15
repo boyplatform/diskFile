@@ -1,8 +1,9 @@
-package cn.Boy.DiskFile.distributeFileEntry;
+package cn.Boy.DiskFile.Scheduler;
 
 import cn.Boy.DiskFile.ApplicationContextUtil;
 import cn.Boy.DiskFile.ThreadLocalContext;
 import cn.Boy.DiskFile.common.CommonHelper;
+import cn.Boy.DiskFile.distributeFileEntry.CephViewerFileCacheManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 @Service("ViewerFileCachePuller")
-public class ViewerFileCachePuller extends TimerTask implements IDeamonThreader{
+public class ViewerFileCachePuller extends TimerTask implements IDeamonThreader {
 
     private final Log log = LogFactory.getLog(ViewerFileCachePuller.class);
     @Override

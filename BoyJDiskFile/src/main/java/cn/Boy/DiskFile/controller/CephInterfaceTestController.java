@@ -681,10 +681,10 @@ public class CephInterfaceTestController {
 
                //boardcast the platformDocType to diskFile cluster
                HttpServletRequest request= ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-               String[] diskFileIps=crystalClusterIps.split(";");
-               for(String diskFileIp: diskFileIps){
-                   if(diskFileIp!=commonHelper.getRequestIP(request)) {
-                       String postUrl = request.getScheme() + "://" + diskFileIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addDocType";
+               String[] CrystalClusterIps=crystalClusterIps.split(";");
+               for(String crystalClusterIp: CrystalClusterIps){
+                   if(crystalClusterIp.equals(commonHelper.getRequestIP(request))==false) {
+                       String postUrl = request.getScheme() + "://" + crystalClusterIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addDocType";
                        Map<String,Object> parameterMap=new Hashtable<String,Object>();
                        parameterMap.put("docTypeName",platformDocType.getDocTypeName());
                        parameterMap.put("docTypeDesc",platformDocType.getDocTypeDesc());
@@ -694,7 +694,7 @@ public class CephInterfaceTestController {
                        parameterMap.put("isActive",platformDocType.getIsActive());
                        try {
                            DiskFileHttpHelper.getInstance().postRequest(postUrl,parameterMap,DiskFileHttpHelper.postQuestMode.json.toString());
-                       } catch (JSONException e) {
+                       } catch (Exception e) {
                            e.printStackTrace();
                        }
                    }
@@ -743,16 +743,16 @@ public class CephInterfaceTestController {
 
             //boardcast the platformFileExt to diskFile cluster
             HttpServletRequest request= ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-            String[] diskFileIps=crystalClusterIps.split(";");
-            for(String diskFileIp: diskFileIps){
-                if(diskFileIp!=commonHelper.getRequestIP(request)) {
-                    String postUrl = request.getScheme() + "://" + diskFileIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addFileExt";
+            String[] CrystalClusterIps=crystalClusterIps.split(";");
+            for(String crystalClusterIp: CrystalClusterIps){
+                if(crystalClusterIp.equals(commonHelper.getRequestIP(request))==false) {
+                    String postUrl = request.getScheme() + "://" + crystalClusterIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addFileExt";
                     Map<String,Object> parameterMap=new Hashtable<String,Object>();
                     parameterMap.put("fileExtName",platformFileExt.getFileExtName());
 
                     try {
                         DiskFileHttpHelper.getInstance().postRequest(postUrl,parameterMap,DiskFileHttpHelper.postQuestMode.json.toString());
-                    } catch (JSONException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }
@@ -793,17 +793,17 @@ public class CephInterfaceTestController {
 
             //boardcast the platformDocTypeFileExtRelation to diskFile cluster
             HttpServletRequest request= ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-            String[] diskFileIps=crystalClusterIps.split(";");
-            for(String diskFileIp: diskFileIps){
-                if(diskFileIp!=commonHelper.getRequestIP(request)) {
-                    String postUrl = request.getScheme() + "://" + diskFileIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addDocTypeFileExtRelation";
+            String[] CrystalClusterIps=crystalClusterIps.split(";");
+            for(String crystalClusterIp: CrystalClusterIps){
+                if(crystalClusterIp.equals(commonHelper.getRequestIP(request))==false) {
+                    String postUrl = request.getScheme() + "://" + crystalClusterIp + ":" + request.getServerPort()+"/DiskFile/CephEntry/"+"addDocTypeFileExtRelation";
                     Map<String,Object> parameterMap=new Hashtable<String,Object>();
                     parameterMap.put("docTypeId",platformDocTypeFileExtRelation.getDocTypeId());
                     parameterMap.put("fileExtID",platformDocTypeFileExtRelation.getPlatformFileExtID());
 
                     try {
                         DiskFileHttpHelper.getInstance().postRequest(postUrl,parameterMap,DiskFileHttpHelper.postQuestMode.textBody.toString());
-                    } catch (JSONException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }

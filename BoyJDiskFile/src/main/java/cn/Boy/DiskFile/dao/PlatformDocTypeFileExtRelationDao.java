@@ -51,6 +51,9 @@ public interface PlatformDocTypeFileExtRelationDao {
     @Update("update platformDocTypeFileExtRelation set isActive=1 where docTypeFileExtRelationID=#{docTypeFileExtRelationID}")
     public int setToActive(long docTypeFileExtRelationID);
 
+    @Update("update platformDocTypeFileExtRelation set isBoardCast=1,boardCastCount=#{boardCastCount} where docTypeFileExtRelationID=#{docTypeFileExtRelationID}")
+    public int setToBoardCasted(long docTypeFileExtRelationID,long boardCastCount);
+
     //-------------------------------------------------------------------------------------------------------------------------------//
     //根据平台文件类型返回下属文件扩展名
 

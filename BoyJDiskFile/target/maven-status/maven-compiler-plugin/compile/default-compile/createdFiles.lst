@@ -1,5 +1,4 @@
 cn\Boy\DiskFile\controller\TvSeriesController.class
-cn\Boy\DiskFile\distributeFileEntry\IDeamonThreader.class
 cn\Boy\DiskFile\distributeFileEntry\CustomerDbListOps.class
 cn\Boy\DiskFile\common\DiskFileHttpHelper$6.class
 cn\Boy\DiskFile\distributeFileEntry\IPlatformOps.class
@@ -7,7 +6,6 @@ cn\Boy\DiskFile\DbFilter.class
 cn\Boy\DiskFile\test\UploadFile.class
 META-INF\spring-configuration-metadata.json
 cn\Boy\DiskFile\distributeFileEntry\AbsCommonFileOperator.class
-cn\Boy\DiskFile\distributeFileEntry\PoseidonOptimizeSeekRulesPersist.class
 cn\Boy\DiskFile\ThreadLocalContext.class
 cn\Boy\DiskFile\common\CommonResourceHandler.class
 cn\Boy\DiskFile\common\CommonEnums$ClusterStorageStatus.class
@@ -15,11 +13,13 @@ cn\Boy\DiskFile\common\DiskFileHttpHelper$2.class
 cn\Boy\DiskFile\service\TvSeriesService.class
 cn\Boy\DiskFile\distributeFileEntry\CephFileMetaInfoRecord.class
 cn\Boy\DiskFile\ThreadLocalContext$ThreadBindings.class
+cn\Boy\DiskFile\crystalBlock\task\FileMetaInfoBoardCast\DecideAndAction.class
 cn\Boy\DiskFile\distributeFileEntry\CephClusterTalk.class
 cn\Boy\DiskFile\distributeFileEntry\ICommonFileMetaInfoRecorder.class
 cn\Boy\DiskFile\pojo\DocumentList.class
 cn\Boy\DiskFile\pojo\PlatformFileExt.class
 cn\Boy\DiskFile\pojo\RequestLog.class
+cn\Boy\DiskFile\Scheduler\PoseidonOptimizeSeekRulesPersist.class
 cn\Boy\DiskFile\common\DiskFileHttpHelper$5.class
 cn\Boy\DiskFile\dao\AppPlatformDocTypeRelationDao.class
 cn\Boy\DiskFile\distributeFileEntry\IFileNodeMetaInfoRecorderSync.class
@@ -34,11 +34,11 @@ cn\Boy\DiskFile\test\CephFSTest.class
 cn\Boy\DiskFile\pojo\OperationLog.class
 cn\Boy\DiskFile\dao\PlatformOpsDao.class
 cn\Boy\DiskFile\common\CommonEnums$StorageClusterType.class
-cn\Boy\DiskFile\distributeFileEntry\ViewerFileCachePuller.class
 cn\Boy\DiskFile\distributeFileEntry\AbsCommonClusterTalker.class
 cn\Boy\DiskFile\controller\CephInterfaceTestController.class
 cn\Boy\DiskFile\dao\TvCharacterDao.class
 cn\Boy\DiskFile\pojo\TvSeries.class
+cn\Boy\DiskFile\crystalBlock\task\FileMetaInfoBoardCast\Interact.class
 cn\Boy\DiskFile\DataSourceConfig.class
 cn\Boy\DiskFile\pojo\PlatformDocType.class
 cn\Boy\DiskFile\dao\RequestLogDao.class
@@ -46,7 +46,7 @@ cn\Boy\DiskFile\dao\DocumentListDao.class
 cn\Boy\DiskFile\dao\PlatformDocTypeDao.class
 cn\Boy\DiskFile\distributeFileEntry\HDFSFileMetaInfoRecord.class
 cn\Boy\DiskFile\DataSourceConfig$DynamicDataSource.class
-cn\Boy\DiskFile\distributeFileEntry\LocalNotExistFileClear.class
+cn\Boy\DiskFile\Scheduler\LocalNotExistFileClear.class
 cn\Boy\DiskFile\test\UploadFile$1.class
 cn\Boy\DiskFile\pojo\AppPlatformDocTypeRelation.class
 cn\Boy\DiskFile\common\DiskFileHttpHelper$1.class
@@ -64,6 +64,8 @@ cn\Boy\DiskFile\pojo\CustomerDbList.class
 cn\Boy\DiskFile\controller\ViewerFileCacheController.class
 cn\Boy\DiskFile\pojo\UnitNodeRelation.class
 cn\Boy\DiskFile\distributeFileEntry\HDFSFileOperator.class
+cn\Boy\DiskFile\common\DiskFileHttpHelper$getQuestMode.class
+cn\Boy\DiskFile\Scheduler\ViewerFileCacheRevoker.class
 cn\Boy\DiskFile\dto\CephFsConfigInfo.class
 cn\Boy\DiskFile\common\DiskFileHttpHelper$7.class
 cn\Boy\DiskFile\dao\PlatformDocTypeFileExtRelationDao.class
@@ -72,12 +74,15 @@ cn\Boy\DiskFile\common\Dom4jHelper.class
 cn\Boy\DiskFile\dao\OperationLogDao.class
 cn\Boy\DiskFile\common\CommonHelper.class
 cn\Boy\DiskFile\pojo\TvCharacter.class
-cn\Boy\DiskFile\distributeFileEntry\ViewerFileCacheRevoker.class
+cn\Boy\DiskFile\Scheduler\FileMetaInfoBoardCastSchedule.class
 cn\Boy\DiskFile\distributeFileEntry\CephFileNodeMetaInfoSync.class
 cn\Boy\DiskFile\dao\TvSeriesDao.class
+cn\Boy\DiskFile\crystalBlock\task\FileMetaInfoBoardCast\DeamonThreads.class
 cn\Boy\DiskFile\pojo\PlatformDocTypeFileExtRelation.class
 cn\Boy\DiskFile\service\CustomerService.class
 cn\Boy\DiskFile\dao\CustomerDao.class
+cn\Boy\DiskFile\Scheduler\ViewerFileCachePuller.class
 cn\Boy\DiskFile\KeyValueGroup.class
 cn\Boy\DiskFile\Application.class
+cn\Boy\DiskFile\Scheduler\IDeamonThreader.class
 cn\Boy\DiskFile\common\DiskFileHttpHelper$3.class

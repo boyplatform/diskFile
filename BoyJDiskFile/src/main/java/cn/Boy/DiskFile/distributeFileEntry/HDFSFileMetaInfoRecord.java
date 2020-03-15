@@ -24,14 +24,19 @@ public class HDFSFileMetaInfoRecord implements ICommonFileMetaInfoRecorder {
     {
         return null;
     }
-    public boolean deletePlatformFileExt(int fileExtID){
+    public boolean deletePlatformFileExt(long fileExtID){
 
         return true;
     }
-    public boolean recoverPlatformFileExt(int fileExtID){
+    public boolean recoverPlatformFileExt(long fileExtID){
 
         return true;
     }
+
+    public boolean setPlatformFileExtBoardCastedFlag(long fileExtID,long boardCastCount){
+        return true;
+    }
+
     public List<PlatformFileExt> getAllPlatformFileExt(){
 
         return  null;
@@ -57,13 +62,18 @@ public class HDFSFileMetaInfoRecord implements ICommonFileMetaInfoRecorder {
 
         return null;
     }
-    public boolean deletePlatformDocType(int docTypeId){
+    public boolean deletePlatformDocType(long docTypeId){
 
         return true;
     }
-    public boolean recoverPlatformDocType(int docTypeId){
+    public boolean recoverPlatformDocType(long docTypeId){
         return  true;
     }
+
+    public boolean setPlatformDocTypeBoardCastedFlag(long docTypeId,long boardCastCount){
+        return  true;
+    }
+
     public List<PlatformDocType> getAllPlatformDocType(){
 
         return  null;
@@ -90,11 +100,16 @@ public class HDFSFileMetaInfoRecord implements ICommonFileMetaInfoRecorder {
 
         return null;
     }
-    public boolean deletePlatformDocTypeFileExtRelation(int docTypeFileExtRelationID){
+    public boolean deletePlatformDocTypeFileExtRelation(long docTypeFileExtRelationID){
 
         return  true;
     }
-    public boolean recoverPlatformDocTypeFileExtRelation(int docTypeFileExtRelationID){
+    public boolean recoverPlatformDocTypeFileExtRelation(long docTypeFileExtRelationID){
+
+        return  true;
+    }
+
+    public boolean setPlatformDocTypeFileExtRelationBoardCastedFlag(long docTypeFileExtRelationID,long boardCastCount){
 
         return  true;
     }
@@ -130,11 +145,11 @@ public class HDFSFileMetaInfoRecord implements ICommonFileMetaInfoRecorder {
 
         return null;
     }
-    public boolean deleteAppPlatformDocTypeRelation(int appdocTypeRelationID){
+    public boolean deleteAppPlatformDocTypeRelation(long appdocTypeRelationID){
 
         return  true;
     }
-    public boolean recoverAppPlatformDocTypeRelation(int appdocTypeRelationID){
+    public boolean recoverAppPlatformDocTypeRelation(long appdocTypeRelationID){
 
         return  true;
     }

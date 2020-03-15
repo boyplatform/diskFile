@@ -14,8 +14,11 @@ create table platformFileExt
    updateTime           timestamp default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
    isActive             bit default 1 comment '0=not active
             1=active',
+   isBoardCast          bit default 0,
+   boardCastCount       bigint default 0,
    primary key (fileExtID)
 );
+
 
 drop table if exists platformDocType;
 
@@ -35,10 +38,13 @@ create table platformDocType
             1=active',
    createTime           datetime,
    updateTime           timestamp default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   isBoardCast          bit default 0,
+   boardCastCount       bigint default 0,
    primary key (docTypeId)
 );
 
 alter table platformDocType comment 'The table is used to descript the self defined platform docu';
+
 
 drop table if exists documentList;
 
@@ -101,6 +107,8 @@ create table platformDocTypeFileExtRelation
             1=active',
    createTime           datetime,
    updateTime           timestamp default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   isBoardCast          bit default 0,
+   boardCastCount       bigint default 0,
    primary key (docTypeFileExtRelationID)
 );
 
@@ -111,6 +119,7 @@ alter table platformDocTypeFileExtRelation add constraint FK_Reference_2 foreign
 
 alter table platformDocTypeFileExtRelation add constraint FK_Reference_3 foreign key (platformFileExtID)
       references platformFileExt (fileExtID) on delete restrict on update restrict;
+
 
 drop table if exists AppPlatformDocTypeRelation;
 
@@ -132,11 +141,14 @@ create table AppPlatformDocTypeRelation
    isActive             bit default 1,
    createTime           datetime,
    updateTime           timestamp default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   isBoardCast          bit,
+   boardCastCount       bigint,
    primary key (appdocTypeRelationID)
 );
 
 alter table AppPlatformDocTypeRelation add constraint FK_Reference_1 foreign key (docTypeId)
       references platformDocType (docTypeId) on delete restrict on update restrict;
+
 
 
 drop table if exists RequestLog;

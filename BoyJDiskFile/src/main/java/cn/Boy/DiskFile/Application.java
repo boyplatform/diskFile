@@ -1,17 +1,14 @@
 package cn.Boy.DiskFile;
 
 
+import cn.Boy.DiskFile.Scheduler.*;
 import cn.Boy.DiskFile.distributeFileEntry.*;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.beans.BeansException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import cn.Boy.DiskFile.common.*;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.stereotype.Component;
 
 
 @SpringBootApplication
@@ -50,6 +47,10 @@ public class  Application {
 		//初始化ViewerFileCachePuller定时任务线程
 		long viewerFileCachePullRate=Long.parseLong(applicationContext.getEnvironment().getProperty("platformArch.ViewerFileCache.ViewerFileCachePullRate"));
 		((ViewerFileCachePuller)applicationContext.getBean("ViewerFileCachePuller")).setTimerSchedule(viewerFileCachePullRate);
+
+		//初始化FileMetaInfoBoardCastSchedule定时任务线程
+		long fileMetaInfoBoardCastScheduleRate=Long.parseLong(applicationContext.getEnvironment().getProperty("platformArch.FileMetaInfoBoardCastScheduleRate"));
+		((FileMetaInfoBoardCastSchedule)applicationContext.getBean("FileMetaInfoBoardCastSchedule")).setTimerSchedule(fileMetaInfoBoardCastScheduleRate);
 
 	}
 }

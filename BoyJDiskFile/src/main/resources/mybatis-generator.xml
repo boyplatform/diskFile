@@ -103,6 +103,8 @@
             <property name="createTime" value="true"/>
             <property name="updateTime" value="true"/>
             <property name="isActive" value="true"/>
+            <property name="isBoardCast" value="true"/>
+            <property name="boardCastCount" value="true"/>
             <!-- 数据库表主键 -->
             <generatedKey column="fileExtID" sqlStatement="Mysql" identity="true" />
         </table>
@@ -120,6 +122,8 @@
             <property name="isActive" value="true"/>
             <property name="createTime" value="true"/>
             <property name="updateTime" value="true"/>
+            <property name="isBoardCast" value="true"/>
+            <property name="boardCastCount" value="true"/>
             <!-- 数据库表主键 -->
             <generatedKey column="docTypeId" sqlStatement="Mysql" identity="true" />
         </table>
@@ -134,7 +138,8 @@
             <property name="isActive" value="true"/>
             <property name="createTime" value="true"/>
             <property name="updateTime" value="true"/>
-
+            <property name="isBoardCast" value="true"/>
+            <property name="boardCastCount" value="true"/>
             <!-- 数据库表主键 -->
             <generatedKey column="docTypeFileExtRelationID" sqlStatement="Mysql" identity="true" />
         </table>
@@ -182,9 +187,11 @@
             <property name="downloadFlag" value="true"/>
             <property name="uploadFlag" value="true"/>
             <property name="deleteFlag" value="true"/>
+            <property name="isActive" value="true"/>
             <property name="createTime" value="true"/>
             <property name="updateTime" value="true"/>
-
+            <property name="isBoardCast" value="true"/>
+            <property name="boardCastCount" value="true"/>
             <!-- 数据库表主键 -->
             <generatedKey column="appdocTypeRelationID" sqlStatement="Mysql" identity="true" />
         </table>

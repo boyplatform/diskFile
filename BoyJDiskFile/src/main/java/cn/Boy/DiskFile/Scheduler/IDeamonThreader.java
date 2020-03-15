@@ -1,4 +1,4 @@
-package cn.Boy.DiskFile.distributeFileEntry;
+package cn.Boy.DiskFile.Scheduler;
 
 
 import java.util.Timer;

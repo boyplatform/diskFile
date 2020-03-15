@@ -45,4 +45,7 @@ public interface PlatformDocTypeDao {
 
     @Update("update platformDocType set isActive=1 where docTypeId=#{docTypeId}")
     public int setToActive(long docTypeId);
+
+    @Update("update platformDocType set isBoardCast=1,boardCastCount=#{boardCastCount} where docTypeId=#{docTypeId}")
+    public int setToBoardCasted(long docTypeId,long boardCastCount);
 }

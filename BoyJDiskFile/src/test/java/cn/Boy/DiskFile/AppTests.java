@@ -73,6 +73,9 @@ public class AppTests {
 	  @Qualifier("CephFileOperator")
 	  private AbsCommonFileOperator cephFileOperator;
 
+	   @Autowired
+	   private CommonHelper commonHelper;
+
 	  //创建基础数据测试的对象，并在before中初始化测试参数，用于测基础数据表的增删改查。
 	private static String UserGuid="";
 
@@ -143,6 +146,8 @@ public class AppTests {
 
         log.trace("Prepare executed once!");
 
+
+
 		setUserGuid(UUID.randomUUID().toString().replace("-",""));
 		ThreadLocalContext.setDbKey("main");
 
@@ -208,6 +213,8 @@ public class AppTests {
 
 	@Test
 	public void contextLoads() throws Exception {
+		//log.trace("currentIP:"+ commonHelper.getSelfIp());
+		log.trace("currentIP:"+ commonHelper.getSelfIp());
 
 	}
 
@@ -964,7 +971,7 @@ public class AppTests {
 	//test ceph interface dir/file delete function
 
 	//test ceph restful api
-	@Test
+	@Ignore
 	public void UnitTest_14_mgr_dump() throws  Exception{
 
 		String url="http://192.168.125.130:5000/api/v0.1/mgr/dump";

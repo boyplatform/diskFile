@@ -1,8 +1,9 @@
-package cn.Boy.DiskFile.distributeFileEntry;
+package cn.Boy.DiskFile.Scheduler;
 
 import cn.Boy.DiskFile.ApplicationContextUtil;
 import cn.Boy.DiskFile.ThreadLocalContext;
 import cn.Boy.DiskFile.common.CommonHelper;
+import cn.Boy.DiskFile.distributeFileEntry.CephViewerFileCacheManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;

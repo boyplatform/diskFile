@@ -39,7 +39,7 @@ logging:
 DiskFile:
   streamFileCacheFolder: target/uploadFileCache    #文件上传目录，可以用/开头的绝对路径
   viewerCacheFileFolder: target/uploadFileCache/viewerCache
-
+  httpScheme: http
   datasource:
     className:  com.mysql.jdbc.jdbc2.optional.MysqlDataSource #postgresql org.postgresql.ds.PGSimpleDataSource  #使用HikariDataSource的配置
     serverName: localhost # #remote:localhost/192.168.125.129  local:127.0.0.1
@@ -57,8 +57,12 @@ DiskFile:
 
 
 platformArch:
-#定义DISKFILE微服务集群IP
+#定义DISKFILE微服务集群IP、同步信息广播频率等参数
   CrystalClusterIps: 192.168.125.129;192.168.125.130
+  FileMetaInfoBoardCastScheduleRate: 15
+  SelfPubNetworkIpCacheTime: 600
+  CheckSelfPubNetworkIpUrl: https://api.ipify.org?format=json
+  CrystalClusterNetworkMode: lan               # internet=广域网集群/lan=局域网内网集群
 #定义搜索优化配置参数
   PoSeidong:
     RulePersistentScanRate: 10

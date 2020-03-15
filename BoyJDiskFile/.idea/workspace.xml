@@ -25,110 +25,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/controller/CephInterfaceTestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="795" column="50" selection-start-line="795" selection-start-column="33" selection-end-line="795" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/ViewerFileCacheRevoker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="60" column="19" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1406">
-              <caret line="74" column="44" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/DataSourceConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2033">
-              <caret line="129" column="27" selection-start-line="129" selection-start-column="15" selection-end-line="129" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformOpsDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cn/Boy/DiskFile/AppTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16872">
-              <caret line="952" column="135" selection-start-line="952" selection-start-column="8" selection-end-line="952" selection-end-column="135" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2606#2607#0" expanded="true" />
-                <element signature="e#2628#2629#0" expanded="true" />
-                <element signature="e#2757#2758#0" expanded="true" />
-                <element signature="e#2786#2787#0" expanded="true" />
-                <element signature="e#4098#4099#0" expanded="true" />
-                <element signature="e#4128#4129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/common/DiskFileHttpHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1083">
-              <caret line="77" column="69" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/PoseidonOptimizeSeekRulesPersist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="25" column="89" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="97" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,15 +38,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>CommonResourceHandler</find>
-      <find>seek file list by path for the user</find>
-      <find>logging</find>
-      <find>PoSeidong.RulePersistentScanRate</find>
-      <find>getAllDocumentList</find>
-      <find>cephFileMetaInfoRecord.getAllDocumentList()</find>
-      <find>PoSeidong</find>
-      <find>MemoryLiveTimeSec</find>
-      <find>platformArch</find>
       <find>CommonHelper</find>
       <find>writeToCluster</find>
       <find>cephFileOperator.fileOrDir</find>
@@ -169,8 +57,17 @@
       <find>ls</find>
       <find>DiskFileHttpHelper</find>
       <find>DiskFileClusterIps</find>
-      <find>CrystalClusterIps</find>
       <find>crystalClusterIps</find>
+      <find>CrystalClusterIps</find>
+      <find>deletePlatformDocType</find>
+      <find>crystalClusterIp</find>
+      <find>@scope</find>
+      <find>CommonHelper.getinstance()</find>
+      <find>CommonHelper.getInstance</find>
+      <find>CommonHelper.getInstance()</find>
+      <find>getInstance</find>
+      <find>/ls</find>
+      <find>AppPlatformDocTypeRelation</find>
     </findStrings>
     <dirStrings>
       <dir>D:\WorkSpace\The5\Coding\Boy1.0\Board\diskFile\BoyJDiskFile\src\main\resources</dir>
@@ -180,12 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/OperationLogDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/DBUpgradeHistoryOps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/DBUpgradeHistoryDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/UnitNodeRelationDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/UnitNodeRelationOps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/CustomerDbListDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CustomerDbListOps.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformOpsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/controller/test.http" />
@@ -203,8 +94,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/ICommonClusterTalker.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/HDFSClusterTalk.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/common/Dom4jHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/common/DiskFileHttpHelper.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/AbsCommonClusterTalker.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephClusterTalk.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephFileOperator.java" />
@@ -219,18 +108,26 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephFileNodeMetaInfoSync.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/IViewerFileCacheManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/ViewerFileCachePuller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/controller/ViewerFileCacheController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephViewerFileCacheManager.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/cn/Boy/DiskFile/AppTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/common/CommonHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformDocTypeFileExtRelationDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephFileMetaInfoRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/crystalBlock/task/FileMetaInfoSync/DeamonThreads.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/AppPlatformDocTypeRelationDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/ICommonFileMetaInfoRecorder.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/HDFSFileMetaInfoRecord.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformFileExtDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformDocTypeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformDocTypeFileExtRelationDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephFileMetaInfoRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Scheduler/FileMetaInfoBoardCastSchedule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/controller/CephInterfaceTestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/crystalBlock/task/FileMetaInfoBoardCast/DeamonThreads.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/common/DiskFileHttpHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cn/Boy/DiskFile/AppTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/common/CommonHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" />
       </list>
     </option>
   </component>
@@ -278,6 +175,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,14 +215,31 @@
               <item name="BoyJDiskFile" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DiskFile" type="462c0819:PsiDirectoryNode" />
+              <item name="crystalBlock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BoyJDiskFile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BoyJDiskFile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DiskFile" type="462c0819:PsiDirectoryNode" />
+              <item name="crystalBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="FileMetaInfoBoardCast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BoyJDiskFile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BoyJDiskFile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,12 +253,13 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584180714449" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584290006093" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.47816092" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -357,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.AppTests">
     <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.Boy.DiskFile.Application" />
       <module name="main" />
@@ -567,43 +484,49 @@
       <workItem from="1584170199020" duration="188000" />
       <workItem from="1584179267298" duration="108000" />
       <workItem from="1584179647244" duration="1068000" />
+      <workItem from="1584201330350" duration="404000" />
+      <workItem from="1584206574578" duration="2219000" />
+      <workItem from="1584208825025" duration="662000" />
+      <workItem from="1584247255363" duration="33864000" />
+      <workItem from="1584290181164" duration="1756000" />
+      <workItem from="1584292366096" duration="898000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTests - 2019.09.10 at 23h 53m 43s.xml">
+    <history-entry file="AppTests - 2020.03.15 at 21h 49m 08s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests - 2019.09.11 at 00h 07m 00s.xml">
+    <history-entry file="AppTests - 2020.03.16 at 00h 24m 22s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests - 2019.09.11 at 00h 16m 46s.xml">
+    <history-entry file="AppTests - 2020.03.16 at 00h 26m 44s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests - 2019.09.11 at 00h 36m 17s.xml">
+    <history-entry file="AppTests - 2020.03.16 at 00h 28m 46s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests - 2019.09.11 at 00h 38m 33s.xml">
+    <history-entry file="AppTests - 2020.03.16 at 00h 29m 22s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests - 2019.09.11 at 00h 40m 10s.xml">
+    <history-entry file="AppTests - 2020.03.16 at 00h 32m 58s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests - 2019.09.11 at 00h 41m 32s.xml">
+    <history-entry file="AppTests - 2020.03.16 at 00h 34m 51s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests - 2019.09.11 at 01h 02m 52s.xml">
+    <history-entry file="AppTests - 2020.03.16 at 00h 37m 32s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests - 2019.09.11 at 01h 36m 26s.xml">
+    <history-entry file="AppTests - 2020.03.16 at 00h 49m 45s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests - 2019.09.11 at 01h 37m 35s.xml">
+    <history-entry file="AppTests - 2020.03.16 at 00h 50m 09s.xml">
       <configuration name="AppTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="772330000" />
+    <option name="totallyTimeSpent" value="812133000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,7 +540,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30962005" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33306387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -626,16 +549,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32863188" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3280142" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8264075" weight="0.43439716" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.81099194" weight="0.4809591" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.81099194" weight="0.48049647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49731904" weight="0.32863188" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49731904" weight="0.3280142" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932975" weight="0.32863188" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932975" weight="0.3280142" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.18900804" side_tool="true" weight="0.6346968" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.6427614" visible="true" weight="0.32624114" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.32863188" />
@@ -703,13 +626,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/cn/Boy/DiskFile/AppTests.java</url>
-          <line>910</line>
+          <line>917</line>
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/cn/Boy/DiskFile/AppTests.java</url>
-          <line>275</line>
+          <line>282</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
@@ -760,242 +683,13 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Tools/DEV/Java/mavenRepo/com/ceph/libcephfs/0.80.5/libcephfs-0.80.5.jar!/com/ceph/fs/CephStat.class" />
-    <entry file="jar://D:/Tools/DEV/Java/mavenRepo/com/ceph/libcephfs/0.80.5/libcephfs-0.80.5.jar!/com/ceph/fs/CephMount.class" />
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="452" column="18" selection-start-line="452" selection-start-column="18" selection-end-line="452" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/controller/ViewerFileCacheController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="48" column="40" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephClusterTalk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="39" column="68" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#runShellAndGetResult#0;class#CephClusterTalk#0" />
-            <element signature="method#runShellAndGetResult#1;class#CephClusterTalk#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/IFileNodeMetaInfoRecorderSync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="61" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/ThreadLocalContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BoyJDiskFile.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/pojo/UnitNodeRelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="463" column="39" selection-start-line="463" selection-start-column="16" selection-end-line="463" selection-end-column="39" />
-          <folding>
-            <element signature="e#10990#10991#0" expanded="true" />
-            <element signature="e#11034#11035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/IViewerFileCacheManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="883" column="16" selection-start-line="883" selection-start-column="16" selection-end-line="883" selection-end-column="16" />
-          <folding>
-            <element signature="e#37718#37719#0" expanded="true" />
-            <element signature="e#37754#37755#0" expanded="true" />
-            <element signature="e#39232#39233#0" expanded="true" />
-            <element signature="e#39292#39293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/pojo/DocumentList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="757" column="15" selection-start-line="757" selection-start-column="11" selection-end-line="757" selection-end-column="15" />
-          <folding>
-            <element signature="e#21773#21774#0" expanded="true" />
-            <element signature="e#21811#21812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/DocumentListDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-context/5.0.4.RELEASE/spring-context-5.0.4.RELEASE.jar!/org/springframework/stereotype/Service.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dto/CephFsConfigInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/AbsCommonFileOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1133">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#writeFileWithLseek#0;class#AbsCommonFileOperator#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/HDFSFileOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CustomerDbListOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generator.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1729">
-          <caret line="91" column="48" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephViewerFileCacheManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2109">
-          <caret line="242" column="64" selection-start-line="242" selection-start-column="17" selection-end-line="242" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getViewerFileCache#0;class#CephViewerFileCacheManager#0" />
-            <element signature="method#revokeExpiredViewerFileCache#0;class#CephViewerFileCacheManager#0" />
-            <element signature="method#PullNonExpiredViewerFileCacheFromClusterToLocal#0;class#CephViewerFileCacheManager#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/pojo/PlatformDocType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1349">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/test/CephFSTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="2420" column="20" selection-start-line="2420" selection-start-column="20" selection-end-line="2420" selection-end-column="20" />
-          <folding>
-            <element signature="e#94598#94599#0" expanded="true" />
-            <element signature="e#94636#94637#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephFileOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-320">
-          <caret line="390" column="20" selection-start-line="390" selection-start-column="11" selection-end-line="390" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#mount#0;class#CephFileOperator#0" />
-            <element signature="method#listDir#0;class#CephFileOperator#0" />
-            <element signature="method#mkDir#0;class#CephFileOperator#0" />
-            <element signature="method#delDir#0;class#CephFileOperator#0" />
-            <element signature="method#getFileStatByPath#0;class#CephFileOperator#0" />
-            <element signature="method#renameDirOrFile#0;class#CephFileOperator#0" />
-            <element signature="method#renameDirOrFile#1;class#CephFileOperator#0" />
-            <element signature="method#delFile#0;class#CephFileOperator#0" />
-            <element signature="method#delFile#1;class#CephFileOperator#0" />
-            <element signature="method#readFile#0;class#CephFileOperator#0" />
-            <element signature="method#copyFile#0;class#CephFileOperator#0" />
-            <element signature="method#writeFileWithLseek#0;class#CephFileOperator#0" />
-            <element signature="method#listFileOrDir#0;class#CephFileOperator#0" />
-            <element signature="method#fileOrDir#0;class#CephFileOperator#0" />
-            <element signature="method#setWorkDir#0;class#CephFileOperator#0" />
-            <element signature="method#writeToCluster#0;class#CephFileOperator#0" />
-            <element signature="method#seekFromCluster#0;class#CephFileOperator#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephFileNodeMetaInfoSync.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="6" />
+        <state relative-caret-position="-1821">
+          <caret line="333" column="31" selection-start-line="333" selection-start-column="31" selection-end-line="333" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#uploadLazySync_StatusUpdate#0;class#CephFileNodeMetaInfoSync#0" />
-            <element signature="method#downloadLazySync_checkAndSave#0;class#CephFileNodeMetaInfoSync#0" />
             <element signature="method#deleteLazySync_checkAndSave#0;class#CephFileNodeMetaInfoSync#0" />
             <element signature="method#renameLazySync_checkAndSave#0;class#CephFileNodeMetaInfoSync#0" />
             <element signature="method#clearLocalFileNotExistedOnCluster#0;class#CephFileNodeMetaInfoSync#0" />
@@ -1003,188 +697,342 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/PoseidonOptimizeSeek.java">
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="129" column="13" selection-start-line="120" selection-start-column="39" selection-end-line="129" selection-end-column="13" />
+        <state relative-caret-position="117">
+          <caret line="2131" column="19" selection-start-line="2131" selection-start-column="19" selection-end-line="2131" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#seek#1;class#PoseidonOptimizeSeek#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/test/UploadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/ServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/pojo/PlatformDocTypeFileExtRelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1121">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#3940#3941#0" expanded="true" />
-            <element signature="e#3972#3973#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/ICommonFileMetaInfoRecorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="42" column="118" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/HDFSFileMetaInfoRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="121" column="5" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephFileMetaInfoRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="365" column="13" lean-forward="true" selection-start-line="365" selection-start-column="13" selection-end-line="365" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5644#6296#0" />
-            <element signature="e#6302#6987#0" />
-            <element signature="e#6993#7197#0" />
-            <element signature="e#7203#7405#0" />
-            <element signature="e#7411#7939#0" />
-            <element signature="e#7945#8487#0" />
-            <element signature="e#8493#9046#0" />
-            <element signature="e#9052#9636#0" />
-            <element signature="e#9642#11397#0" />
-            <element signature="e#11403#13038#0" />
-            <element signature="e#13044#13308#0" />
-            <element signature="e#13314#13576#0" />
-            <element signature="e#14206#14898#0" />
-            <element signature="e#14904#15611#0" />
-            <element signature="e#15617#16401#0" />
-            <element signature="e#16407#17590#0" />
-            <element signature="e#17596#18836#0" />
-            <element signature="e#18842#19090#0" />
-            <element signature="e#19096#19342#0" />
-            <element signature="e#19348#19942#0" />
-            <element signature="e#19948#20600#0" />
-            <element signature="e#20606#22350#0" />
-            <element signature="e#22356#24130#0" />
-            <element signature="e#24136#24333#0" />
-            <element signature="e#24339#24688#0" />
-            <element signature="e#24694#24889#0" />
-            <element signature="e#25412#25946#0" />
-            <element signature="e#25953#26499#0" />
-            <element signature="e#26505#27015#0" />
-            <element signature="e#27021#27551#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/DbFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformDocTypeFileExtRelationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="68" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#23072#23073#0" expanded="true" />
+            <element signature="e#23112#23113#0" expanded="true" />
+            <element signature="e#82971#82972#0" expanded="true" />
+            <element signature="e#83020#83021#0" expanded="true" />
+            <element signature="e#94598#94599#0" expanded="true" />
+            <element signature="e#94636#94637#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="74" column="44" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="44" />
+        <state relative-caret-position="194">
+          <caret line="86" column="35" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/DataSourceConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/AppPlatformDocTypeRelationDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2033">
-          <caret line="129" column="27" selection-start-line="129" selection-start-column="15" selection-end-line="129" selection-end-column="27" />
+        <state relative-caret-position="174">
+          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/HDFSFileMetaInfoRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="111" column="117" selection-start-line="111" selection-start-column="117" selection-end-line="111" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformDocTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformFileExtDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="48" column="51" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/UnitNodeRelationOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Scheduler/IDeamonThreader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Scheduler/LocalNotExistFileClear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Scheduler/ViewerFileCacheRevoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="96" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformOpsDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephViewerFileCacheManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="1721">
+          <caret line="242" column="64" selection-start-line="242" selection-start-column="17" selection-end-line="242" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#revokeExpiredViewerFileCache#0;class#CephViewerFileCacheManager#0" />
+            <element signature="method#PullNonExpiredViewerFileCacheFromClusterToLocal#0;class#CephViewerFileCacheManager#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cn/Boy/DiskFile/AppTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Scheduler/PoseidonOptimizeSeekRulesPersist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16872">
-          <caret line="952" column="135" selection-start-line="952" selection-start-column="8" selection-end-line="952" selection-end-column="135" />
+        <state relative-caret-position="155">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2606#2607#0" expanded="true" />
-            <element signature="e#2628#2629#0" expanded="true" />
-            <element signature="e#2757#2758#0" expanded="true" />
-            <element signature="e#2786#2787#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4128#4129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/ICommonFileMetaInfoRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/common/Dom4jHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/PoseidonOptimizeSeek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="121" column="171" selection-start-line="121" selection-start-column="171" selection-end-line="121" selection-end-column="171" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/controller/CephInterfaceTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="531" column="56" selection-start-line="531" selection-start-column="56" selection-end-line="531" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Scheduler/ViewerFileCachePuller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Scheduler/FileMetaInfoBoardCastSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="36" column="80" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/common/DiskFileHttpHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="77" column="69" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="69" />
+        <state relative-caret-position="126">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/PoseidonOptimizeSeekRulesPersist.java">
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/Yylex.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="89" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="97" />
+        <state relative-caret-position="70">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/JSONParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-jcl/5.0.4.RELEASE/spring-jcl-5.0.4.RELEASE.jar!/org/apache/commons/logging/LogFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="541" selection-start-line="541" selection-end-line="541" />
+          <folding>
+            <element signature="e#18215#18216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-test/5.0.4.RELEASE/spring-test-5.0.4.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestExecutionCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-test/5.0.4.RELEASE/spring-test-5.0.4.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestExecutionCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-test/5.0.4.RELEASE/spring-test-5.0.4.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-test/5.0.4.RELEASE/spring-test-5.0.4.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestClassCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-test/5.0.4.RELEASE/spring-test-5.0.4.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunBefores.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="240" selection-start-line="240" selection-end-line="240" />
+          <folding>
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#5951#6086#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6484#6648#0" expanded="true" />
+            <element signature="e#6647#6648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-test/5.0.4.RELEASE/spring-test-5.0.4.RELEASE.jar!/org/springframework/test/context/junit4/statements/SpringRepeat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-test/5.0.4.RELEASE/spring-test-5.0.4.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-test/5.0.4.RELEASE/spring-test-5.0.4.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestMethodCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#870#1063#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/Boy/DiskFile/AppTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/IDeamonThreader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/workspace/5KT/Tools_Location/Dev/Java/apache-maven-3.6.0/localRepository/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/factory/BeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/common/CommonHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2622">
-          <caret line="237" column="32" lean-forward="true" selection-start-line="237" selection-start-column="25" selection-end-line="237" selection-end-column="38" />
+        <state relative-caret-position="359">
+          <caret line="298" column="11" selection-start-line="298" selection-start-column="11" selection-end-line="298" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getNodeUUID#0;class#CommonHelper#0" />
@@ -1196,66 +1044,96 @@
             <element signature="method#getNodeRandomNum#0;class#CommonHelper#0" />
             <element signature="method#getPlatFormRandomNum#0;class#CommonHelper#0" />
             <element signature="method#getBaseJarPath#0;class#CommonHelper#0" />
+            <element signature="method#initNodeFilePath#0;class#CommonHelper#0" />
             <element signature="method#getFileHashFreshName#0;class#CommonHelper#0" />
             <element signature="method#getHashViewerCacheFileName#0;class#CommonHelper#0" />
             <element signature="method#getMbFromByte#0;class#CommonHelper#0" />
             <element signature="method#getPoseidongParameter#0;class#CommonHelper#0" />
+            <element signature="method#getSHA256Str#0;class#CommonHelper#0" />
             <element signature="method#byteToHex#0;class#CommonHelper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/ViewerFileCachePuller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/LocalNotExistFileClear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/ViewerFileCacheRevoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/controller/CephInterfaceTestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="795" column="50" selection-start-line="795" selection-start-column="33" selection-end-line="795" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#getRequestIP#0;class#CommonHelper#0" />
+            <element signature="method#getSelfIp#0;class#CommonHelper#0" />
+            <element signature="method#getSelfPubNetworkIp#0;class#CommonHelper#0" />
+            <element signature="e#10022#10038#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="60" column="19" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="19" />
+        <state relative-caret-position="-102">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="193" column="35" lean-forward="true" selection-start-line="193" selection-start-column="35" selection-end-line="193" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/pojo/PlatformFileExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4255">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/pojo/PlatformDocType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6551">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/pojo/PlatformDocTypeFileExtRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="262" column="19" selection-start-line="262" selection-start-column="19" selection-end-line="262" selection-end-column="19" />
+          <folding>
+            <element signature="e#8114#8115#0" expanded="true" />
+            <element signature="e#8148#8149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/pojo/AppPlatformDocTypeRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6437">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/dao/PlatformDocTypeFileExtRelationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="38" column="98" selection-start-line="38" selection-start-column="88" selection-end-line="38" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/distributeFileEntry/CephFileMetaInfoRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="327" column="47" lean-forward="true" selection-start-line="327" selection-start-column="45" selection-end-line="327" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1567#2265#0" />
+            <element signature="e#2271#2955#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Boy/DiskFile/crystalBlock/task/FileMetaInfoBoardCast/DeamonThreads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="164" column="72" selection-start-line="164" selection-start-column="49" selection-end-line="164" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

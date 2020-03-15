@@ -68,7 +68,7 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
         return platformFileExt;
     }
 
-    public boolean deletePlatformFileExt(int fileExtID) {
+    public boolean deletePlatformFileExt(long fileExtID) {
         if(platformFileExtDao.setToNotActive(fileExtID)>0)
         {
              return true;
@@ -77,7 +77,7 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
         }
     }
 
-    public boolean recoverPlatformFileExt(int fileExtID) {
+    public boolean recoverPlatformFileExt(long fileExtID) {
         if(platformFileExtDao.setToActive(fileExtID)>0)
         {
             return true;
@@ -86,6 +86,14 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
         }
     }
 
+    public boolean setPlatformFileExtBoardCastedFlag(long fileExtID,long boardCastCount) {
+        if(platformFileExtDao.setToBoardCasted(fileExtID,boardCastCount)>0)
+        {
+            return true;
+        }else{
+            return false;
+        }
+    }
     @Transactional(readOnly=true)
     public List<PlatformFileExt> getAllPlatformFileExt(){
         try {
@@ -195,7 +203,7 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
         return platformDocType;
     }
 
-    public boolean deletePlatformDocType(int docTypeId) {
+    public boolean deletePlatformDocType(long docTypeId) {
         if(platformDocTypeDao.setToNotActive(docTypeId)>0)
         {
             return true;
@@ -204,8 +212,17 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
         }
     }
 
-    public boolean recoverPlatformDocType(int docTypeId) {
+    public boolean recoverPlatformDocType(long docTypeId) {
         if(platformDocTypeDao.setToActive(docTypeId)>0)
+        {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean setPlatformDocTypeBoardCastedFlag(long docTypeId,long boardCastCount){
+        if(platformDocTypeDao.setToBoardCasted(docTypeId,boardCastCount)>0)
         {
             return true;
         }else{
@@ -343,7 +360,7 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
         return platformDocTypeFileExtRelation;
     }
 
-    public boolean deletePlatformDocTypeFileExtRelation(int docTypeFileExtRelationID) {
+    public boolean deletePlatformDocTypeFileExtRelation(long docTypeFileExtRelationID) {
         if(platformDocTypeFileExtRelationDao.setToNotActive(docTypeFileExtRelationID)>0)
         {
             return true;
@@ -352,8 +369,18 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
         }
     }
 
-    public boolean recoverPlatformDocTypeFileExtRelation(int docTypeFileExtRelationID) {
+    public boolean recoverPlatformDocTypeFileExtRelation(long docTypeFileExtRelationID) {
         if(platformDocTypeFileExtRelationDao.setToActive(docTypeFileExtRelationID)>0)
+        {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean setPlatformDocTypeFileExtRelationBoardCastedFlag(long docTypeFileExtRelationID,long boardCastCount){
+
+        if(platformDocTypeFileExtRelationDao.setToBoardCasted(docTypeFileExtRelationID,boardCastCount)>0)
         {
             return true;
         }else{
@@ -499,7 +526,7 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
         return appPlatformDocTypeRelation;
     }
 
-    public boolean deleteAppPlatformDocTypeRelation(int appdocTypeRelationID) {
+    public boolean deleteAppPlatformDocTypeRelation(long appdocTypeRelationID) {
         if(appPlatformDocTypeRelationDao.setToNotActive(appdocTypeRelationID)>0)
         {
             return true;
@@ -508,7 +535,7 @@ public class CephFileMetaInfoRecord implements ICommonFileMetaInfoRecorder{
         }
     }
 
-    public boolean recoverAppPlatformDocTypeRelation(int appdocTypeRelationID) {
+    public boolean recoverAppPlatformDocTypeRelation(long appdocTypeRelationID) {
         if(appPlatformDocTypeRelationDao.setToActive(appdocTypeRelationID)>0)
         {
             return true;

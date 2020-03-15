@@ -3,35 +3,52 @@ package cn.Boy.DiskFile.common;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.system.ApplicationHome;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.util.*;
+import java.net.*;
 import java.text.SimpleDateFormat;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
+import cn.Boy.DiskFile.common.DiskFileHttpHelper;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 @Component("CommonHelper")
+@Scope("singleton")
 public class CommonHelper {
 
-    private static CommonHelper instance = new CommonHelper();
+
+    private static CommonHelper instance = null;
     public static CommonHelper getInstance(){
+
+            if (instance == null) {
+                instance = new CommonHelper();
+            }
+
         return instance;
     }
 
     private final Log log = LogFactory.getLog(CommonHelper.class);
 
+    private  String cachedNodePubNetWorkIp="";
+    private  Date cachedNodePubNetWorkIpDate=null;
+
     @Value("${platformArch.PoSeidong.MemoryLiveTimeSec:100}") int memoryLiveTimeSec;
     @Value("${platformArch.PoSeidong.MemoryPerHitComeUpSeconds:15}") int memoryPerHitComeUpSeconds;
     @Value("${platformArch.ViewerFileCache.ViewerFileNameHashTimes}") int viewerFileNameHashTimes;
     @Value("${platformArch.ViewerFileCache.ViewerCacheFileNameLenth}") int viewerCacheFileNameLenth;
+    @Value("${platformArch.SelfPubNetworkIpCacheTime}") int selfPubNetworkIpCacheTime;
+    @Value("${platformArch.CheckSelfPubNetworkIpUrl}") String checkSelfPubNetworkIpUrl;
+    @Value("${platformArch.CrystalClusterNetworkMode}") String crystalClusterNetworkMode;
 
     public String getNodeUUID(){
 
@@ -240,4 +257,60 @@ public class CommonHelper {
         return ip;
     }
 
+    public  String getSelfIp() {
+        String localip = null;// 本地IP，如果没有配置外网IP则返回它
+        String netip = null;// 外网IP
+        try {
+            Enumeration netInterfaces = NetworkInterface.getNetworkInterfaces();
+            InetAddress ip = null;
+            boolean finded = false;// 是否找到外网IP
+
+
+            if(crystalClusterNetworkMode.equals("internet")){
+                netip=getSelfPubNetworkIp();
+                finded=true;
+            }
+
+            while (netInterfaces.hasMoreElements() && !finded) {
+                NetworkInterface ni = (NetworkInterface) netInterfaces.nextElement();
+                Enumeration address = ni.getInetAddresses();
+                while (address.hasMoreElements()) {
+                    ip = (InetAddress) address.nextElement();
+                    if (!ip.isSiteLocalAddress() && !ip.isLoopbackAddress() && ip.getHostAddress().indexOf(":") == -1) {// 外网IP
+                        netip = ip.getHostAddress();
+                        finded = true;
+                        break;
+                    } else if (ip.isSiteLocalAddress() && !ip.isLoopbackAddress() && ip.getHostAddress().indexOf(":") == -1) {// 内网IP
+                        localip = ip.getHostAddress();
+                    }
+                }
+            }
+        } catch (SocketException e) {
+            e.printStackTrace();
+        }
+
+        if (netip != null && !"".equals(netip)) {
+            return netip;
+        } else {
+            return localip;
+        }
+    }
+
+    private String getSelfPubNetworkIp(){
+
+        try
+        {
+            if (cachedNodePubNetWorkIp.equals("") || cachedNodePubNetWorkIpDate == null || (new Date()).after(new Date(cachedNodePubNetWorkIpDate.getTime() + selfPubNetworkIpCacheTime * 1000))) {
+                String getUrl =checkSelfPubNetworkIpUrl;
+                Map<String, Object> parameterMap = new Hashtable<String, Object>();
+                JSONObject jsonRs = (JSONObject) (new JSONParser().parse(DiskFileHttpHelper.getInstance().getRequest(getUrl,parameterMap,DiskFileHttpHelper.getQuestMode.json.toString())));
+                cachedNodePubNetWorkIp=jsonRs.get("ip").toString();
+                cachedNodePubNetWorkIpDate=new Date();
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return  cachedNodePubNetWorkIp;
+    }
 }

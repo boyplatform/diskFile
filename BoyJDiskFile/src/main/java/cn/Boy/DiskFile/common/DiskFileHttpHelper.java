@@ -28,13 +28,16 @@ public class DiskFileHttpHelper {
     private static DiskFileHttpHelper instance = null;
     public static DiskFileHttpHelper getInstance()
     {
-        if(instance==null)
-        {
-            instance=new DiskFileHttpHelper();
-        }
+            if (instance == null) {
+                instance = new DiskFileHttpHelper();
+            }
+
         return instance;
     }
     public enum postQuestMode{
+        json,textBody,binaryBody
+    }
+    public enum getQuestMode{
         json,textBody,binaryBody
     }
 

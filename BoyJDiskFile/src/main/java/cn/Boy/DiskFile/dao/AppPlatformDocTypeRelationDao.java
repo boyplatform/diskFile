@@ -41,9 +41,9 @@ public interface AppPlatformDocTypeRelationDao {
     public int deleteByGuid(String appdocTypeRelationGuid);
 
     @Update("update AppPlatformDocTypeRelation set isActive=0 where appdocTypeRelationID=#{appdocTypeRelationID}")
-    public int setToNotActive(int appdocTypeRelationID);
+    public int setToNotActive(long appdocTypeRelationID);
 
     @Update("update AppPlatformDocTypeRelation set isActive=1 where appdocTypeRelationID=#{appdocTypeRelationID}")
-    public int setToActive(int appdocTypeRelationID);
+    public int setToActive(long appdocTypeRelationID);
 
 }
