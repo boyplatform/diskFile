@@ -268,7 +268,9 @@ public class CommonHelper {
 
             if(crystalClusterNetworkMode.equals("internet")){
                 netip=getSelfPubNetworkIp();
-                finded=true;
+                if (netip != null && !"".equals(netip)) {
+                    finded = true;
+                }
             }
 
             while (netInterfaces.hasMoreElements() && !finded) {

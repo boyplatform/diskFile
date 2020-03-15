@@ -62,7 +62,7 @@ platformArch:
   FileMetaInfoBoardCastScheduleRate: 15
   SelfPubNetworkIpCacheTime: 600
   CheckSelfPubNetworkIpUrl: https://api.ipify.org?format=json
-  CrystalClusterNetworkMode: lan               # internet=广域网集群/lan=局域网内网集群
+  CrystalClusterNetworkMode: internet               # internet=广域网集群/lan=局域网内网集群
 #定义搜索优化配置参数
   PoSeidong:
     RulePersistentScanRate: 10
