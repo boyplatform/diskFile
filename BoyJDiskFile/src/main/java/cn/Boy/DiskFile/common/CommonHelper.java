@@ -310,6 +310,8 @@ public class CommonHelper {
                 cachedNodePubNetWorkIpDate=new Date();
             }
         }catch (Exception e){
+            cachedNodePubNetWorkIp="";
+            cachedNodePubNetWorkIpDate=null;
             e.printStackTrace();
         }
 
